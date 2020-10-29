@@ -6,6 +6,7 @@ router.get('/', (req, res) => {
         attributes: [
             'id',
             'title',
+            'content',
             'created_at'
         ],
         include: [{
@@ -37,6 +38,15 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+
+    res.render('login');
+});
+
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
@@ -45,6 +55,7 @@ router.get('/post/:id', (req, res) => {
         attributes: [
             'id',
             'title',
+            'content',
             'created_at'
         ],
         include: [

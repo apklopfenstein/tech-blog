@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User, Post} = require('../../models');
+const {User, Post, Comment} = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
             include: [
                 {
                     model: Post,
-                    attributes: ['id', 'title', 'created_at']
+                    attributes: ['id', 'title', 'content', 'created_at']
                 },
                 {
                     model: Comment,
@@ -53,7 +53,7 @@ router.get('/:id', (req, res) => {
         });
 });
 
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
     User.create({
             username: req.body.username,
             email: req.body.email,
