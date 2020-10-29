@@ -1,10 +1,5 @@
-function createPost() {
-    
-    if (response.ok) {
-      document.location.replace('/create-post');
-    } else {
-      alert(response.statusText);
-    }
-  }
+async function createPost() {
+    window.location = '/posts/create-post'
+}
   
-document.querySelector('#create-btn').addEventListener('submit', createPost);
+document.querySelector('#create-btn').addEventListener('click', createPost);
