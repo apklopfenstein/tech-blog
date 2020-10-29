@@ -30,7 +30,7 @@ app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-// app.use(routes);
+app.use(routes);
 
 // Connect server and db
 sequelize.sync({ force: false }).then(() => {
