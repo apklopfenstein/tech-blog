@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tech Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <header>
@@ -13,7 +14,7 @@
         <a href="/">Home</a>
         <a href="/dashboard">Dashboard</a>
         {{#if loggedIn}}
-        <button id="logout">Logout</button>
+        <a id="logout">Logout</a>
         {{else}}
         <a href="/login">Login</a>
         {{/if}}

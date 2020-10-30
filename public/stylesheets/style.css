@@ -1,0 +1,129 @@
+* {
+    background-color: #DEECDF;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #363636;
+    margin-left: 35px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 210px;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+nav a {
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 35px;
+    color: #363636;
+}
+
+nav a:hover {
+    border-bottom: solid 2px lightslategrey;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin: auto;
+}
+
+.post {
+    width: 1750px;
+    margin-bottom: 15px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#title {
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    color: #363636;
+    font-weight: bold;
+}
+
+#title:hover {
+    border-bottom: solid 2px lightslategrey;
+}
+
+#logout {
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.user {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#content {
+    font-weight: 300;
+}
+
+h3, form {
+    margin-left: 35px;
+}
+
+label, input, textarea {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+button {
+    padding: 5px;
+    border: solid 2px #363636;
+    border-radius: 3px;
+    background-color: lightgrey;
+}
+
+button:hover {
+    background-color: rgb(122, 134, 101);
+    color: lightgray;
+}
+
+.create-btn {
+    margin-left: 35px;
+}
+
+h2 {
+    margin-left: 35px;
+}
+
+.post-content {
+    height: 100px;
+    width: 300px;
+}
+
+#comment {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.comment {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.single-post {
+    width: 1750px;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-left: 60px;
+}

@@ -1,4 +1,4 @@
-{{> post-info post}}
+<div class="single-post">{{> post-info post}}</div>
 
 {{#if loggedIn}}
 <form class="comment-form">
@@ -7,7 +7,7 @@
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button type="submit" class="comment-btn">add comment</button>
   </div>
 </form>
 {{/if}}

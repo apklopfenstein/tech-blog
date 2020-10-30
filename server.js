@@ -8,13 +8,11 @@ const helpers = require('./utils/helpers');
 
 const hbs = exphbs.create({ helpers });
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-// const ttl = 5 * 60 * 1000;
 const sess = {
   secret: 'Super secret secret',
-  cookie: { maxAge: 60000 },
+  cookie: { maxAge: 100000 },
   resave: false,
   saveUninitialized: true,
-  // maxAge: ttl,
   store: new SequelizeStore({
     db: sequelize
   })
